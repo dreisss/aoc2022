@@ -3,9 +3,11 @@
 
 def solution() -> int:
     def count_priority(rucksacks: list[str]) -> int:
-        first = set(rucksacks[0])
-        second = set(rucksacks[1])
-        third = set(rucksacks[2])
+        [first, second, third] = [
+            set(rucksacks[0]),
+            set(rucksacks[1]),
+            set(rucksacks[2]),
+        ]
 
         return count_points(first.intersection(second).intersection(third).pop())
 

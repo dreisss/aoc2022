@@ -3,8 +3,10 @@
 
 def solution() -> int:
     def count_priority(rucksack: str) -> int:
-        first = set(rucksack[: len(rucksack) // 2])
-        second = set(rucksack[len(rucksack) // 2 :])
+        [first, second] = [
+            set(rucksack[: len(rucksack) // 2]),
+            set(rucksack[len(rucksack) // 2 :]),
+        ]
 
         return count_points(first.intersection(second).pop())
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-def solution():
+def solution() -> int:
     with open("../../inputs/01.txt") as input:
         return sum(
             sorted(
