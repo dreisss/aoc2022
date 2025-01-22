@@ -14,7 +14,7 @@ def solution() -> int:
 
         return first.issubset(second) or second.issubset(first)
 
-    with open("../../inputs/04.txt") as input:
+    with open("../../inputs/day04.txt") as input:
         return len(list(filter(contains_other, input.read().split("\n"))))
 
 

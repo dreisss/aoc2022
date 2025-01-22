@@ -16,7 +16,7 @@ def solution() -> int:
 
         return points
 
-    with open("../../inputs/02.txt") as input:
+    with open("../../inputs/day02.txt") as input:
         return sum(map(count_points, input.read().split("\n")))
 
 

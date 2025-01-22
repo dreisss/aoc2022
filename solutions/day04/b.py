@@ -14,7 +14,7 @@ def solution() -> int:
 
         return not first.isdisjoint(second)
 
-    with open("../../inputs/04.txt") as input:
+    with open("../../inputs/day04.txt") as input:
         return len(list(filter(contains_other, input.read().split("\n"))))
 
 

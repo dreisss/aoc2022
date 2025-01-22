@@ -18,7 +18,7 @@ def solution() -> int:
 
         return ordinal - 64 + 26
 
-    with open("../../inputs/03.txt") as input:
+    with open("../../inputs/day03.txt") as input:
         return sum(map(count_priority, input.read().split("\n")))
 
 

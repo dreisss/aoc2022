@@ -2,7 +2,7 @@
 
 
 def solution() -> int:
-    with open("../../inputs/08.txt") as input:
+    with open("../../inputs/day08.txt") as input:
         rows = input.read().split("\n")
         len_rows, len_columns = len(rows), len(rows[0])
         visibles = 2 * (len_rows + len_columns - 2)

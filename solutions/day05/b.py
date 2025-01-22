@@ -28,11 +28,11 @@ def solution() -> str:
         return parsed_procedures
 
     def move_crate(stacks: list[list[str]], qty_: int, from_: int, to_: int):
-        for i in range(qty_):
-            moved = stacks[from_ - 1].pop()
-            stacks[to_ - 1].append(moved)
+        moved = stacks[from_ - 1][-qty_:]
+        stacks[from_ - 1] = stacks[from_ - 1][:-qty_]
+        stacks[to_ - 1].extend(moved)
 
-    with open("../../inputs/05.txt") as input:
+    with open("../../inputs/day05.txt") as input:
         [stacks, procedures] = input.read().split("\n\n")
 
         stacks = parse_stacks(stacks)

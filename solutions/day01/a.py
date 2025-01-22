@@ -2,7 +2,7 @@
 
 
 def solution() -> int:
-    with open("../../inputs/01.txt") as input:
+    with open("../../inputs/day01.txt") as input:
         return max(
             [
                 sum([int(number) for number in numbers.split("\n")])
